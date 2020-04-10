@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Form Page</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <meta name="keywords" content="wizard, bootstrap wizard, creative tim, long forms, 3 step wizard, sign up wizard, beautiful wizard, long forms wizard, wizard with validation, paper design, paper wizard bootstrap, bootstrap paper wizard">
+    <meta name="description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<!-- Fonts and Icons -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link href="assets/css/themify-icons.css" rel="stylesheet">
+	<style type="text/css">
+		.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: yellow;}
+	</style>
+	</head>
+
+	<body>
+	<div class="image-container set-full-height" style="background-image: url('form_back.jpg')">
+	    <a href="#">
+	         <div class="logo-container">
+	            <div class="logo">
+	                <img src="shoz_icon.png" height="60px">
+	            </div>
+	            <div class="brand">
+	                My Shooz
+	            </div>
+	        </div>
+	    </a>
+
+	    <!--   Big container   -->
+	<div class="container">
+	 <div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+		<div class="wizard-container">
+        <div class="card wizard-card" data-color="orange" id="wizardProfile">
+        <form action="" method="">
+		    <div class="wizard-header text-center">
+		    <h3 class="wizard-title">Create Form for Shoe
+		    </h3>
+			<p class="category">This information will tell about product precisely.</p>
+		    </div>
+			<div class="wizard-navigation">
+			<div class="progress-with-circle">
+			<div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" style="width: 21%;"></div>
+			</div>
+			<ul>
+			<li>
+			<a href="#about" data-toggle="tab">
+			<div class="icon-circle">
+			<i class="ti-user"></i>
+			</div>
+			About
+			</a>
+			</li>
+			<li>
+			<a href="#account" data-toggle="tab">
+			<div class="icon-circle">
+			<i class="ti-settings"></i>
+			</div>
+			Spec
+			</a>
+			</li>
+			<li>
+			<a href="#address" data-toggle="tab">
+			<div class="icon-circle">
+			<i class="ti-gallery"></i>
+			</div>
+			Design
+			</a>
+			</li>
+			</ul>
+			</div>
+		    <div class="tab-content">
+		    <div class="tab-pane" id="about">
+		    <div class="row">
+			<div class="col-sm-6">
+			<div class="form-group">
+			<label>Name <small>(required)</small></label>
+			<input name="firstname" type="text" class="form-control" placeholder="Sporty 7...">
+			</div>
+			<div class="form-group">
+			<label>Brand Name <small>(required)</small></label>
+			<input name="lastname" type="text" class="form-control" placeholder="PUMA">
+			</div>
+			</div>
+			</div>
+		    </div>
+
+		    <div class="tab-pane" id="account">
+		    <div class="row">
+		    <div class="col-md-6">
+		    <label for="favcolor">Select color of shoes:</label>
+			<input type="color" id="favcolor" name="favcolor" required>
+			<br><br>
+			<label for="favcolor">Select size of shoes:</label>
+			<div class="dropdown">
+  			<button type="button" class="btn btn-primary dropdown-toggle selection" data-toggle="dropdown">
+			    --Select any one--
+			</button>
+  			<div class="dropdown-menu"> 
+  			  <a class="dropdown-item" href="#">10</a>
+   			  <a class="dropdown-item" href="#">9</a>
+              <a class="dropdown-item" href="#">8</a>
+              <a class="dropdown-item" href="#">7</a>
+              <a class="dropdown-item" href="#">6</a>
+              <a class="dropdown-item" href="#">5</a>
+  			</div>
+			</div>
+			<br><br>
+			<label>Specify Gender:   </label>
+			<div class="form-check-inline">
+  			<label class="form-check-label">
+    		<input type="radio" class="form-check-input" name="optradio" required>Male
+  			</label>
+			</div>
+			<div class="form-check-inline">
+  			<label class="form-check-label">
+    		<input type="radio" class="form-check-input" name="optradio">Female
+  			</label>
+			</div>
+				<br><br>
+  			
+		    </div>
+
+		    <div class="col-md-6">
+		    
+    		<label for="ex1">Link of that shoes:</label>
+    		<input class="form-control" id="ex1" type="url" width="100%" required>
+  			
+		    <br><br>
+		    <label>Rating</label>
+  			<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="star-rating">
+        <span class="fa fa-star-o" data-rating="1"></span>
+        <span class="fa fa-star-o" data-rating="2"></span>
+        <span class="fa fa-star-o" data-rating="3"></span>
+        <span class="fa fa-star-o" data-rating="4"></span>
+        <span class="fa fa-star-o" data-rating="5"></span>
+        <input type="hidden" name="whatever1" class="rating-value" value="0">
+      </div>
+    </div>
+  </div>
+</div>
+		   
+		   </div>
+		    </div>
+		    </div>
+
+
+		    <div class="tab-pane" id="address">		   
+		    <div class="row">
+ 			<form action="multiupload.php" method="post" enctype="multipart/form-data">
+		    <div class="col-md-6">
+		    <label>Upload Images</label>
+      		<input type="file" class="form-control" id="images" name="images[]" onchange="preview_images();" multiple/>
+  			</div>
+			 </form>
+ 			</div>
+ <div class="row" id="image_preview"></div>
+
+
+		    </div>
+		    <div class="wizard-footer">
+		    <div class="pull-right">
+		    <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' style="margin-top: 10%"/>
+		    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Finish' style="margin-top: 10%"/>
+		    </div>
+			<div class="pull-left">
+		        <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Previous' style="margin-top: 10%" />
+		    </div>
+		    <div class="clearfix"></div>
+		    </div>
+		    </form>
+		    </div>
+		    </div> <!-- wizard container -->
+		    </div>
+	    	</div><!-- end row -->
+		</div> <!--  big container -->
+	</div>
+	<script type="text/javascript">
+		$(function(){
+
+    $(".dropdown-menu a").click(function(){
+
+      $(".selection:first-child").text($(this).text());
+      $(".selection:first-child").val($(this).text());
+
+   });
+
+});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+  $('#rateMe1').mdbRate();
+});
+	</script>
+	<script type="text/javascript">
+		var $star_rating = $('.star-rating .fa');
+
+var SetRatingStar = function() {
+  return $star_rating.each(function() {
+    if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+      return $(this).removeClass('fa-star-o').addClass('fa-star');
+    } else {
+      return $(this).removeClass('fa-star').addClass('fa-star-o');
+    }
+  });
+};
+
+$star_rating.on('click', function() {
+  $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+  return SetRatingStar();
+});
+
+SetRatingStar();
+$(document).ready(function() {
+
+});
+	</script>
+	<script>
+function preview_images() 
+{
+  	$('#image_preview').empty();
+ var total_file=document.getElementById("images").files.length;
+ for(var i=0;i<total_file;i++)
+ {
+
+  $('#image_preview').append("<div class='col-md-3'><img class='img-responsive' src='"+URL.createObjectURL(event.target.files[i])+"'></div>");
+ }
+}
+</script>
+
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/demo.js" type="text/javascript"></script>
+	<script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+
+	<!--  More information about jquery.validate here: https://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
+</html>
